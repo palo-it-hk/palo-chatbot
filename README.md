@@ -59,7 +59,3 @@ Feel free to customize this readme template to suit the specific needs of your p
 
 ### Future Enhancements
 - We will onboard more LLM APIs to this project such as Google Bard, Llama 2 and many more..
-
-#### Reach out to me
-
-[Satyajit Pattnaik](https://www.linkedin.com/in/satyajitpattnaik/)<br>
