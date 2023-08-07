@@ -12,9 +12,8 @@ A chatbot powered by ChatGPT for PALO IT. The chatbot is designed to assist our 
 - License
 
 ### Features
-- The chatbot can respond to user queries such as company information, services, job openings, and more.
+- The chatbot can respond to user queries such as code help, assistance, and more.
 - The chatbot is powered by a large scale language model, which allows it to generate human-like responses to user queries.
-- The chatbot has been trained on a large corpus of data, which includes information about PALO IT and commonly asked questions from customers.
 - The chatbot utilizes natural language processing techniques to understand and interpret user queries.
 
 ### Technologies
@@ -39,19 +38,14 @@ python app.py
 Open your browser and navigate to http://localhost:5000.
 
 ### Contributing
-Contributions are always welcome! If you'd like to contribute to the project, please follow these steps:
 
-Fork the repository.
-
-Create a new branch for your feature.
-
-Make your changes and commit them.
-
-Push your changes to your forked repository.
-
-Create
-Create a pull request with a detailed description of the changes you've made.
-Please note that all contributions must comply with the code of conduct. Any contributions that do not comply with the code of conduct will be rejected.
+- Contributions are always welcome! If you'd like to contribute to the project, please follow these steps:
+- Fork the repository.
+- Create a new branch for your feature.
+- Make your changes and commit them.
+- Push your changes to your forked repository.
+- Create: Create a pull request with a detailed description of the changes you've made.
+- Please note that all contributions must comply with the code of conduct. Any contributions that do not comply with the code of conduct will be rejected.
 
 ### License
 This project is licensed under the MIT license.
@@ -62,3 +56,9 @@ I would like to thank my colleagues at PALO IT for their support and feedback th
 Give credit to any additional or external resources that you used in this project.
 
 Feel free to customize this readme template to suit the specific needs of your project. Good luck with your project!
+
+# Future Enhancements
+- We will onboard more LLM APIs to this project such as Google Bard, Llama 2 and many more..
+
+  #### Reach out to me
+[Linkedin](https://www.linkedin.com/in/satyajitpattnaik/)<br>
