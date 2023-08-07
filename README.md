@@ -1,8 +1,9 @@
 # PALO IT Chatbot
 
-A chatbot powered by ChatGPT for PALO IT. The chatbot is designed to assist customers in retrieving information about the company, its services, job openings, and any other queries they may have.
+A chatbot powered by ChatGPT for PALO IT. The chatbot is designed to assist our developers, and any other queries they may have.
 
-![PALO IT Chatbot Demo](insert an image/giphy of your chatbot in action!)
+![PALO IT Chatbot Demo](![MicrosoftTeams-image](https://github.com/satyajitpattnaik/palo-chatbot/assets/122432038/6f3d29d9-c822-43e5-80b1-d9ae9ca52cfc)
+)
 
 ### Table of Contents
 Features
