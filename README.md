@@ -2,8 +2,8 @@
 
 A chatbot powered by ChatGPT for PALO IT. The chatbot is designed to assist our developers, and any other queries they may have.
 
-![PALO IT Chatbot Demo](![MicrosoftTeams-image](https://github.com/satyajitpattnaik/palo-chatbot/assets/122432038/6f3d29d9-c822-43e5-80b1-d9ae9ca52cfc)
-)
+![PALO IT Chatbot Demo]([![MicrosoftTeams-image](https://github.com/satyajitpattnaik/palo-chatbot/assets/122432038/6f3d29d9-c822-43e5-80b1-d9ae9ca52cfc)
+)](https://raw.githubusercontent.com/satyajitpattnaik/palo-chatbot/main/static/demo.png)
 
 ### Table of Contents
 Features
