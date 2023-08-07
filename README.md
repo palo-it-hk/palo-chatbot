@@ -5,11 +5,11 @@ A chatbot powered by ChatGPT for PALO IT. The chatbot is designed to assist our 
 <img src="https://raw.githubusercontent.com/satyajitpattnaik/palo-chatbot/main/static/demo.png" alt="PALO IT Chatbot DEMO" width="500">
 
 ### Table of Contents
-Features
-Technologies
-Installation and Usage
-Contributing
-License
+- Features
+- Technologies
+- Installation and Usage
+- Contributing
+- License
 
 ### Features
 - The chatbot can respond to user queries such as company information, services, job openings, and more.
