@@ -22,7 +22,7 @@ A chatbot powered by ChatGPT for PALO IT. The chatbot is designed to assist our 
 - Flask
 - HTML and CSS
 - Bootstrap
-- 
+  
 ### Installation and Usage
 To install and run the chatbot on your local machine, follow these steps:
 
@@ -50,15 +50,16 @@ Open your browser and navigate to http://localhost:5000.
 ### License
 This project is licensed under the MIT license.
 
-# Acknowledgements
+### Acknowledgements
 I would like to thank the developers of ChatGPT for providing the language model that powers this chatbot.
 I would like to thank my colleagues at PALO IT for their support and feedback throughout the development of this project.
 Give credit to any additional or external resources that you used in this project.
 
 Feel free to customize this readme template to suit the specific needs of your project. Good luck with your project!
 
-# Future Enhancements
+### Future Enhancements
 - We will onboard more LLM APIs to this project such as Google Bard, Llama 2 and many more..
 
-  #### Reach out to me
-[Linkedin](https://www.linkedin.com/in/satyajitpattnaik/)<br>
+#### Reach out to me
+
+[Satyajit Pattnaik](https://www.linkedin.com/in/satyajitpattnaik/)<br>
