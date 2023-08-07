@@ -21,21 +21,26 @@ A chatbot powered by ChatGPT for PALO IT. The chatbot is designed to assist our 
 - Python
 - Flask
 - HTML and CSS
-- Bootstrap
-  
+- Tailwind
+
 ### Installation and Usage
 To install and run the chatbot on your local machine, follow these steps:
 
-Clone the repository to your local machine.
+1. Clone the repository to your local machine.
+    ```bash
+    git clone https://github.com/your-username/palo-it-chatbot.git
+    ```
+2. Install the necessary dependencies.
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Rename `config.py.example` to `config.py` and add your API key.
 
-git clone https://github.com/your-username/palo-it-chatbot.git
-Install the necessary dependencies.
-
-pip install -r requirements.txt
-Start the Flask server.
-
-python app.py
-Open your browser and navigate to http://localhost:5000.
+4. Start the Flask server.
+    ```bash
+    python app.py
+    ```
+5. Open your browser and navigate to http://localhost:5000.
 
 ### Contributing
 
