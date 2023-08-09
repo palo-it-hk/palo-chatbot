@@ -1,0 +1,30 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to EC2
+      env:
+        PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        PUBLIC_IP: ${{ secrets.SERVER_IP }}
+      run: |
+        chmod 400 $PRIVATE_KEY
+        ssh -o StrictHostKeyChecking=no -i $PRIVATE_KEY ${PUBLIC_IP} '
+          cd palo-chatbot
+          git pull
+          . venv/bin/activate
+          pip install -r requirements.txt
+          screen -r app_session -X quit
+          screen -S app_session -d -m flask run --host=0.0.0.0 --port=5000
+
+        '
