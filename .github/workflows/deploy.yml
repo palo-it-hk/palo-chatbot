@@ -13,22 +13,23 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Deploy to EC2
+    - name: Deploy
+      run: echo I am deploying the api to AWS
+
+    - name: Deploy in EC2
       env:
         PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-        PUBLIC_IP: ${{ secrets.SERVER_IP }}
+        HOST_NAME : ${{ secrets.SERVER_IP }}
+        USER_NAME : "ec2-user"
+        APP_DIR: "palo-chatbot"
+
       run: |
-        echo $PRIVATE_KEY
-        chmod 400 $PRIVATE_KEY
-        ssh -o StrictHostKeyChecking=no -i <(cat << EOF
-        $PRIVATE_KEY
-        EOF
-        ) ${PUBLIC_IP} '
-          cd palo-chatbot
-          git pull
+        echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
+        ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOST_NAME} "
+          cd ${APP_DIR} &&
+          git pull &&
           . venv/bin/activate
           pip install -r requirements.txt
           screen -r app_session -X quit
           screen -S app_session -d -m flask run --host=0.0.0.0 --port=5000
-
-        '
+        "
