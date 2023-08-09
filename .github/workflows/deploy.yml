@@ -18,8 +18,12 @@ jobs:
         PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         PUBLIC_IP: ${{ secrets.SERVER_IP }}
       run: |
+        echo $PRIVATE_KEY
         chmod 400 $PRIVATE_KEY
-        ssh -o StrictHostKeyChecking=no -i $PRIVATE_KEY ${PUBLIC_IP} '
+        ssh -o StrictHostKeyChecking=no -i <(cat << EOF
+        $PRIVATE_KEY
+        EOF
+        ) ${PUBLIC_IP} '
           cd palo-chatbot
           git pull
           . venv/bin/activate
