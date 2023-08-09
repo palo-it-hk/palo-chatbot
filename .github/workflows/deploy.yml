@@ -18,7 +18,6 @@ jobs:
         PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         PUBLIC_IP: ${{ secrets.SERVER_IP }}
       run: |
-        chmod 400 $PRIVATE_KEY
         ssh -o StrictHostKeyChecking=no -i $PRIVATE_KEY ${PUBLIC_IP} '
           cd palo-chatbot
           git pull
