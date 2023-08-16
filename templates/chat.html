@@ -83,7 +83,7 @@
 
 
 
-    <div class="h-full w-screen" x-data="{ open: false }" @keydown.window.escape="open = false">
+    <div class="h-screen w-screen" x-data="{ open: false }" @keydown.window.escape="open = false">
 
         <div x-show="open" class="relative z-50 lg:hidden"
             x-description="Off-canvas menu for mobile, show/hide based on off-canvas menu state." x-ref="dialog"
@@ -270,11 +270,11 @@
             <div class=" sm:px-6 lg:px-8 ">
 
                 <div
-                    class="relative sm:h-[840px] h-screen overflow-hidden rounded-xl border border-dashed border-gray-400 opacity-75 mt-8">
+                    class="relative h-screen overflow-hidden rounded-xl border border-dashed border-gray-400 opacity-75 sm:mt-8 pb-12 ">
                     <div class="flex flex-col flex-auto h-full sm:p-6 ">
                         <div class="flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-gray-100 h-full sm:p-4">
-                            <div class="flex flex-col h-full overflow-x-auto mb-4">
-                                <div class="flex flex-col h-full mb-4">
+                            <div class="flex flex-col h-full overflow-x-auto sm:mb-4">
+                                <div class="flex flex-col h-full sm:mb-4">
 
                                     <ul class="media-list break-all"></ul>
 
