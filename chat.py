@@ -1,12 +1,8 @@
 import openai
-import config
-# import replicate
 import os
-openai.api_key = config.OPENAI_API_KEY	
-# os.environ["REPLICATE_API_TOKEN"] = "your_api_token_here"
 
-# create a new Replicate client and authenticate with your API key
-# client = replicate.Client(api_key=config.OPENAI_API_KEY)
+api_key = os.environ.get("OPENAI_API_KEY")
+
 
 def gpt_model(input):
     if input:
@@ -25,11 +21,9 @@ def gpt_model(input):
             model="gpt-3.5-turbo", messages=messages
         )
         reply = chat.choices[0].message.content
-        
+
         return reply
     return "something went wrong..."
-    
-
 
 
 def gpt16k(input):
@@ -49,7 +43,7 @@ def gpt16k(input):
             model="gpt-3.5-turbo-16k", messages=messages
         )
         reply = chat.choices[0].message.content
-        
+
         return reply
     return "something went wrong..."
 
@@ -65,14 +59,14 @@ def gpt16k(input):
 #             'temperature': 0.7
 #         }
 
-     
+
 #         # use the generate_text() method of the Replicate client to make the Llama2 API request
 #         response = client.generate_text(params)
 
 #         # print the generated text samples
 #         print(response['samples'])
 #         reply = response['samples']
-        
+
 #         return reply
-    
+
 #     return "something went wrong..."

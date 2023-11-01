@@ -20,6 +20,7 @@ jobs:
       env:
         PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
         HOST_NAME : ${{ secrets.SERVER_IP }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         USER_NAME : "ec2-user"
         APP_DIR: "palo-chatbot"
 
