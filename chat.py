@@ -1,7 +1,10 @@
+from dotenv import load_dotenv
 import openai
 import os
 
-api_key = os.environ.get("OPENAI_API_KEY")
+load_dotenv()
+
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 
 def gpt_model(input):

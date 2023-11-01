@@ -1,23 +1,28 @@
+import re
+
 from flask import Flask, render_template, request, jsonify
 from chat import gpt_model, gpt16k
 
 app = Flask(__name__)
+template_file_name = "chat.html"
+
 
 @app.route("/")
 @app.route("/gpt")
 def gpt():
-    return render_template('chat.html')
+    return render_template(template_file_name)
+
 
 @app.route("/gpt16k")
 def gpt16k():
-    return render_template('chat.html')
+    return render_template(template_file_name)
+
 
 @app.route("/llama2")
 def llama2():
-    return render_template('chat.html')
+    return render_template(template_file_name)
 
 
-import re
 @app.route("/ask", methods=['POST'])
 def ask():
 
@@ -26,15 +31,13 @@ def ask():
     bot_response = ""
     print(model_type)
     if model_type == '/gpt16K' :
-        bot_response = gpt16k(message) 
+        bot_response = gpt16k(message)
     else:
-        bot_response = gpt_model(message) 
-    # print(bot_response)
+        bot_response = gpt_model(message)
+
     output_string = re.sub(r"```\w+\s(.*?)```", r"<code onclick='copyCode(this)'>\1</code>", bot_response, flags=re.DOTALL)
 
-    # print(output_string)
-    # print(len(parts), parts)
-    return jsonify({'status':'OK','answer':output_string})
+    return jsonify({'status': 'OK', 'answer': output_string})
 
 
 if __name__ == "__main__":
